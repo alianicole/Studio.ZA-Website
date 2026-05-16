@@ -52,8 +52,8 @@ nav.scrolled {
 }
 
 .nav-logo svg {
-  width: 82px;
-  height: 82px;
+  height: 70px;
+  width: auto;
 }
 
 .nav-links {
@@ -681,7 +681,7 @@ footer {
   gap: 1.5rem;
 }
 
-.footer-logo svg { width: 36px; height: 44px; }
+.footer-logo svg { height: 44px; width: auto; }
 
 .footer-links {
   display: flex;
