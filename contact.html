@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Studio.ZA</title>
+  <meta name="description" content="Get in touch with Studio.ZA — Zoe Adden Design. New projects, press, and general enquiries.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<nav>
+  <a class="nav-logo" href="index.html" aria-label="Studio.ZA home">
+    <svg viewBox="0 0 400 480" xmlns="http://www.w3.org/2000/svg" fill="none">
+      <path d="M 48 62 Q 28 52 32 38 Q 36 24 58 26 Q 80 28 78 42 Q 76 54 56 56 Q 34 58 36 74 Q 38 90 62 90 Q 84 90 82 76" stroke="#EFE6D2" stroke-width="3.4" stroke-linecap="round"/>
+      <path d="M 100 26 L 148 26 M 124 26 L 124 90" stroke="#EFE6D2" stroke-width="3.4" stroke-linecap="round"/>
+      <path d="M 168 26 L 168 68 Q 168 90 192 90 Q 216 90 216 68 L 216 26" stroke="#EFE6D2" stroke-width="3.4" stroke-linecap="round"/>
+      <path d="M 32 176 L 32 250 L 54 250 Q 88 250 88 213 Q 88 176 54 176 Z" stroke="#EFE6D2" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 110 176 L 110 250" stroke="#EFE6D2" stroke-width="3.4" stroke-linecap="round"/>
+      <ellipse cx="168" cy="213" rx="38" ry="38" stroke="#EFE6D2" stroke-width="3.4"/>
+      <circle cx="32" cy="346" r="6" fill="#C8AC87"/>
+      <path d="M 56 326 L 108 326 L 56 378 L 108 378" stroke="#EFE6D2" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M 144 378 L 176 316 L 208 378 M 156 358 L 196 358" stroke="#EFE6D2" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </a>
+  <ul class="nav-links">
+    <li><a href="projects.html">Projects</a></li>
+    <li><a href="studio.html">Studio</a></li>
+    <li><a href="journal.html">Journal</a></li>
+    <li><a href="found.html">Found</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+</nav>
+
+<div class="contact-wrap">
+  <div class="contact-img">
+    <img src="https://images.unsplash.com/photo-1616137466211-f939a420be84?w=1000&q=80" alt="Studio.ZA workspace">
+  </div>
+
+  <div class="contact-form-side">
+    <p class="section-label">Get in touch</p>
+    <h1>Let's talk about<br><em>your home.</em></h1>
+    <p>We welcome enquiries about new projects, press, and general questions. We'll be in touch within two working days.</p>
+
+    <form class="contact-form" novalidate>
+      <div class="form-group">
+        <label for="name">Your name</label>
+        <input type="text" id="name" name="name" autocomplete="name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email" id="email" name="email" autocomplete="email" required>
+      </div>
+      <div class="form-group">
+        <label for="type">Nature of enquiry</label>
+        <select id="type" name="type">
+          <option value="">— Please select —</option>
+          <option value="new-project">New project</option>
+          <option value="press">Press &amp; editorial</option>
+          <option value="found">Found — vintage pieces</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="message">Your message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+      <button type="submit" class="submit-btn">Send enquiry</button>
+    </form>
+
+    <div style="margin-top: 3.5rem; border-top: 1px solid rgba(239,230,210,0.1); padding-top: 2rem;">
+      <p style="font-size:10px; letter-spacing:0.18em; text-transform:uppercase; color:var(--tan); margin-bottom:1rem;">Direct contacts</p>
+      <p style="font-family:var(--font-serif); font-size:0.95rem; color:rgba(239,230,210,0.65); line-height:2;">
+        New projects: <a href="mailto:hello@zoeaddendesign.com" style="color:var(--ink)">hello@zoeaddendesign.com</a><br>
+        Press: <a href="mailto:press@zoeaddendesign.com" style="color:var(--ink)">press@zoeaddendesign.com</a><br>
+        Found shop: <a href="mailto:found@zoeaddendesign.com" style="color:var(--ink)">found@zoeaddendesign.com</a><br>
+        Tel: <a href="tel:+442075000000" style="color:var(--ink)">+44 (0)20 7500 0000</a>
+      </p>
+      <p style="font-family:var(--font-serif); font-size:0.9rem; color:rgba(239,230,210,0.4); margin-top:1rem; line-height:1.6;">
+        Studio 03, Charles Mews<br>
+        London
+      </p>
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
