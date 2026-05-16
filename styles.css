@@ -38,13 +38,12 @@ nav {
   align-items: center;
   justify-content: space-between;
   padding: 1.4rem 2.8rem;
-  background: transparent;
-  transition: background 0.4s ease;
+  background: #0a0806;
+  border-bottom: 1px solid rgba(239,230,210,0.07);
 }
 
 nav.scrolled {
-  background: rgba(27,24,19,0.94);
-  backdrop-filter: blur(8px);
+  background: #0a0806;
 }
 
 .nav-logo {
@@ -53,8 +52,8 @@ nav.scrolled {
 }
 
 .nav-logo svg {
-  width: 52px;
-  height: 62px;
+  width: 82px;
+  height: 82px;
 }
 
 .nav-links {
