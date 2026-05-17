@@ -708,3 +708,103 @@ footer {
 /* ─── UTILITIES ───────────────────────────────────────── */
 .text-tan { color: var(--tan); }
 .visually-hidden { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+
+/* ─── MOBILE NAV HAMBURGER ────────────────────────────── */
+.nav-hamburger {
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 6px 4px;
+  z-index: 101;
+  position: relative;
+}
+
+.nav-hamburger span {
+  display: block;
+  width: 22px;
+  height: 1.5px;
+  background: var(--ink);
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center;
+}
+
+.nav-hamburger.open span:nth-child(1) { transform: translateY(6.5px) rotate(45deg); }
+.nav-hamburger.open span:nth-child(2) { opacity: 0; transform: scaleX(0); }
+.nav-hamburger.open span:nth-child(3) { transform: translateY(-6.5px) rotate(-45deg); }
+
+/* ─── MOBILE BREAKPOINTS ──────────────────────────────── */
+@media (max-width: 768px) {
+
+  /* Nav */
+  nav { padding: 1rem 1.4rem; }
+  .nav-logo svg { height: 52px; }
+  .nav-hamburger { display: flex; }
+
+  .nav-links {
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: var(--bg);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2.8rem;
+    z-index: 100;
+  }
+
+  .nav-links.open { display: flex; }
+
+  .nav-links a {
+    font-size: 13px;
+    letter-spacing: 0.22em;
+    opacity: 1;
+  }
+
+  /* Sections */
+  section { padding: 4rem 1.4rem; }
+  hr.thin { margin: 0 1.4rem; }
+
+  /* Hero */
+  .hero-copy { left: 1.4rem; right: 1.4rem; bottom: 7vh; }
+
+  /* Work strip */
+  .work-strip { gap: 1rem; }
+
+  /* Footer */
+  footer {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2.5rem 1.4rem;
+    gap: 2rem;
+  }
+  .footer-links { flex-wrap: wrap; gap: 1rem 1.6rem; }
+
+  /* Project headers */
+  .projects-header,
+  .journal-header,
+  .found-header { padding: 7rem 1.4rem 2.5rem; }
+
+  .projects-grid { padding: 0 1.4rem 4rem; }
+  .journal-grid  { padding: 0 1.4rem 4rem; }
+  .found-grid    { padding: 0 1.4rem 4rem; }
+
+  /* Project detail */
+  .detail-body { padding: 3rem 1.4rem 1.5rem; }
+  .detail-gallery {
+    grid-template-columns: 1fr;
+    padding: 1.5rem 1.4rem 4rem;
+  }
+  .detail-gallery img { height: 280px; }
+  .detail-gallery .wide { height: 320px; grid-column: 1; }
+
+  /* Studio */
+  .studio-two-col { padding: 3rem 1.4rem; gap: 2.5rem; }
+  .process-steps  { padding: 0 1.4rem 4rem; }
+
+  /* Contact */
+  .contact-form-side { padding: 3rem 1.4rem; }
+}
