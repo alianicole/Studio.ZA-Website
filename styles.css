@@ -317,17 +317,13 @@ hr.thin {
 
 /* ─── PROJECT DETAIL ──────────────────────────────────── */
 .detail-hero {
-  height: 80vh;
-  min-height: 500px;
   overflow: hidden;
-  position: relative;
+  background: var(--bg);
 }
 
 .detail-hero img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+  height: auto;
 }
 
 .detail-body {
@@ -372,13 +368,11 @@ hr.thin {
 
 .detail-gallery img {
   width: 100%;
-  height: 420px;
-  object-fit: cover;
+  height: auto;
 }
 
 .detail-gallery .wide {
   grid-column: 1 / -1;
-  height: 540px;
 }
 
 /* ─── STUDIO PAGE ─────────────────────────────────────── */
